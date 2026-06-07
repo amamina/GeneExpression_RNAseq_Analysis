@@ -71,12 +71,12 @@ The workflow exports:
 
 ---
 ## Results:
+<p align="center">
+  <img src="results/plots/md_plot.png" width="300">
+</p>
 
-<img src="results/plots/md_plot.png" width="600">
-<img src="results/plots/dispersion_plot.png" width="600">
-<img src="results/plots/histogram_padj.png" width="600">
-<img src="results/plots/box_and_whisker_plot.png" width="600">
-<img src="results/plots/umap.png" width="600">
+
+
 ## Software and Packages
 
 * R (≥ 4.2)
