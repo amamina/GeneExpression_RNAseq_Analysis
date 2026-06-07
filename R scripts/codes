@@ -1,4 +1,4 @@
-```r
+.R
 ############################################################
 # RNA-seq Differential Expression Pipeline (DESeq2)
 # Dataset: GSE253495 (GEO)
