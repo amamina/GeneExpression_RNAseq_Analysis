@@ -106,6 +106,21 @@ Quality control analyses assess:
 * Potential outliers
 
 ---
+## Results:
+<h3>MD Plot</h3>
+<img src="results/plots/md_plot.png" width="250">
+
+
+<h3>Dispersion Plot</h3>
+<img src="results/plots/dispersion_plot.png" width="250">
+
+
+<h3>Histogram Padj</h3>
+<img src="results/plots/histogram_padj.png" width="250">
+
+
+<h3>box-and-whisker plot</h3>
+<img src="results/plots/box-and-whisker_plot.png" width="250">
 
 ## Reproducibility
 
@@ -114,5 +129,9 @@ All analyses were performed using a scripted workflow in R. Package versions and
 ---
 
 ## Author
+Reproduced, documented, and interpreted by Amina Ayub.
 
-Bioinformatics project focused on transcriptomic differential expression analysis and reproducible RNA-seq workflows.
+## Reference:
+	
+López-Navarro B, Simón-Fuentes M, Ríos I, Schiaffino MT et al. Macrophage re-programming by JAK inhibitors relies on MAFB. Cell Mol Life Sci 2024 Mar 25;81(1):152. PMID: 38528207
+
