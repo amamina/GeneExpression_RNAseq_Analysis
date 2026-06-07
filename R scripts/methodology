@@ -1,6 +1,6 @@
-📁 Project: RNA-seq Differential Expression Analysis
+🧬 Project: RNA-seq Differential Expression Analysis
 
-🧱 01_setup.R
+01_setup.R
 Load libraries (DESeq2, data.table, etc.)
 Set parameters
 
@@ -12,48 +12,48 @@ Load annotation file
 Create count matrix
 Validate sample names
 
-🧹 03_filtering.R
+03_filtering.R
 Remove low-count genes
 Apply count threshold filter
 Keep genes with sufficient expression
 
-🧾 04_metadata_creation.R
+04_metadata_creation.R
 Define sample groups
 Create colData object
 Align metadata with counts
 
-⚙️ 05_DESeq2_setup.R
+05_DESeq2_setup.R
 Create DESeqDataSet
 Define design formula (~Group)
 Initialize DESeq2 object
 
-🔬 06_DESeq_analysis.R
+06_DESeq_analysis.R
 Run DESeq()
 Estimate size factors
 Fit model
 
-📊 07_DE_results.R
+07_DE_results.R
 Extract results table
 Apply FDR correction
 Select top DE genes
 Merge with annotation
 
-📉 08_volcano_MA_plots.R
+08_volcano_MA_plots.R
 Volcano plot
 MA plot
 Highlight significant genes
 
-📦 09_QC_analysis.R
+09_QC_analysis.R
 Dispersion plot
 Sample clustering
 Boxplots of normalized counts
 
-🧬 10_UMAP_analysis.R
+10_UMAP_analysis.R
 Normalize counts
 Run UMAP
 Visualize sample clustering
 
-📤 11_export_results.R
+11_export_results.R
 Save DE results table
 Export plots
 Save normalized matrices
