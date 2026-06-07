@@ -70,13 +70,6 @@ The workflow exports:
 * Session information for reproducibility
 
 ---
-## Results:
-<p align="center">
-  <img src="results/plots/md_plot.png" width="300">
-</p>
-
-
-
 ## Software and Packages
 
 * R (≥ 4.2)
