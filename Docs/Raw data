@@ -1,1 +1,14 @@
+- RNA-seq analysis using DESeq2 (GSE253495)
+TITLE: Human CD14+ monocytes from rheumatoid arthritis patients before and after a 3-month period of Upadacitinib treatment
+	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253495
+Platform: GPL23227	BGISEQ-500 (Homo sapiens)
+
+          
+GSM8021683	CD14+ monocytes patient B pre-upadacitinib (pre treatment)
+GSM8021684	CD14+ monocytes patient B 3 month post-upadacitinib treatment (post treatment)
+GSM8021685	CD14+ monocytes patient C pre-upadacitinib (pre treatment)
+GSM8021686	CD14+ monocytes patient C 3 month post-upadacitinib treatment (post treatment)
+GSM8021687	CD14+ monocytes patient D pre-upadacitinib (pre treatment)
+GSM8021688	CD14+ monocytes patient D 3 month post-upadacitinib treatment (post treatment)
+
 
