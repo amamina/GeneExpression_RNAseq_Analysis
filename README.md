@@ -57,8 +57,7 @@ Generated figures include:
 
 * Dispersion plot
 * Adjusted p-value distribution
-* Volcano plot
-* MA plot
+* MD plot
 * UMAP sample clustering
 
 ### 6. Export Results
@@ -71,7 +70,19 @@ The workflow exports:
 * Session information for reproducibility
 
 ---
+## Results:
 
+<h3>MD Plot</h3>
+<img src="results/plots/md_plot.png" width="600">
+
+<h3>Dispersion Plot</h3>
+<img src="results/plots/Dispersion%20Plot.png" width="600">
+
+<h3>Histogram Padj</h3>
+<img src="results/plots/Histogram%20Padj.png" width="600">
+
+<h3>Box-and-Whisker Plot</h3>
+<img src="results/plots/box-and-whisker%20plot.png" width="600">
 
 ## Software and Packages
 
@@ -106,21 +117,7 @@ Quality control analyses assess:
 * Potential outliers
 
 ---
-## Results:
-<h3>MD Plot</h3>
-<img src="results/plots/md_plot.png" width="250">
 
-
-<h3>Dispersion Plot</h3>
-<img src="results/plots/dispersion_plot.png" width="250">
-
-
-<h3>Histogram Padj</h3>
-<img src="results/plots/histogram_padj.png" width="250">
-
-
-<h3>box-and-whisker plot</h3>
-<img src="results/plots/box-and-whisker_plot.png" width="250">
 
 ## Reproducibility
 
