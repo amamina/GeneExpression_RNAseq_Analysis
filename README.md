@@ -73,16 +73,19 @@ The workflow exports:
 ## Results:
 
 <h3>MD Plot</h3>
-<img src="results/plots/md_plot.png" width="600">
+<img src="results/plots/MD plot.png" width="600">
 
 <h3>Dispersion Plot</h3>
-<img src="results/plots/Dispersion%20Plot.png" width="600">
+<img src="results/plots/Dispersion plot.png" width="600">
 
 <h3>Histogram Padj</h3>
-<img src="results/plots/Histogram%20Padj.png" width="600">
+<img src="results/plots/Histogram padj.png" width="600">
 
 <h3>Box-and-Whisker Plot</h3>
-<img src="results/plots/box-and-whisker%20plot.png" width="600">
+<img src="results/plots/box-and-whisker plot.png" width="600">
+
+<h3>UMAP</h3>
+<img src="results/plots/UMAP.png" width="600">
 
 ## Software and Packages
 
