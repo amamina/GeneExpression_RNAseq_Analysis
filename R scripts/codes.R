@@ -3,11 +3,8 @@
 # RNA-seq Differential Expression Pipeline (DESeq2)
 # Dataset: GSE253495 (GEO)
 # Language: R (>=4.2)
-############################################################
 
-############################
 # 0. SETUP
-############################
 
 # Install packages only if missing (safe reproducibility block)
 packages <- c("DESeq2", "data.table", "ggplot2", "umap", "BiocManager")
@@ -31,9 +28,9 @@ set.seed(123)
 dir.create("results", showWarnings = FALSE)
 dir.create("figures", showWarnings = FALSE)
 
-############################
+
 # 1. LOAD DATA FROM GEO
-############################
+
 
 cat("\nLoading RNA-seq count data...\n")
 
@@ -53,9 +50,9 @@ tbl <- as.matrix(
 
 cat("Counts matrix loaded: ", dim(tbl), "\n")
 
-############################
+
 # 2. LOAD ANNOTATION
-############################
+
 
 annot_path <- paste(
   urld,
@@ -69,9 +66,9 @@ rownames(annot) <- annot$GeneID
 
 cat("Annotation loaded: ", dim(annot), "\n")
 
-############################
+
 # 3. DEFINE SAMPLE GROUPS
-############################
+
 
 # Example encoding string (YOU MUST MODIFY based on dataset)
 # 1 = case, 0 = control
@@ -90,9 +87,9 @@ sample_info <- data.frame(
 cat("Groups defined:\n")
 print(table(gs))
 
-############################
+
 # 4. FILTER LOW EXPRESSION GENES
-############################
+
 
 cat("\nFiltering low-expression genes...\n")
 
@@ -101,9 +98,8 @@ tbl <- tbl[keep, ]
 
 cat("Genes after filtering:", nrow(tbl), "\n")
 
-############################
+
 # 5. CREATE DESEQ2 OBJECT
-############################
 
 dds <- DESeqDataSetFromMatrix(
   countData = tbl,
@@ -111,17 +107,17 @@ dds <- DESeqDataSetFromMatrix(
   design = ~ Group
 )
 
-############################
+
 # 6. RUN DESEQ2 MODEL
-############################
+
 
 cat("\nRunning DESeq2...\n")
 
 dds <- DESeq(dds, test = "Wald", sfType = "poscount")
 
-############################
+
 # 7. EXTRACT RESULTS
-############################
+
 
 cat("\nExtracting results...\n")
 
@@ -147,9 +143,9 @@ write.csv(top_genes, "results/top_DE_genes.csv", row.names = FALSE)
 
 cat("Top DE genes saved.\n")
 
-############################
+
 # 8. QC PLOTS
-############################
+
 
 cat("\nGenerating QC plots...\n")
 
@@ -167,9 +163,9 @@ hist(res$padj,
      xlab = "padj")
 dev.off()
 
-############################
+
 # 9. VOLCANO PLOT
-############################
+
 
 cat("\nCreating volcano plot...\n")
 
@@ -199,9 +195,8 @@ abline(h = -log10(0.05), col = "blue", lty = 2)
 
 dev.off()
 
-############################
+
 # 10. MA PLOT
-############################
 
 cat("\nCreating MA plot...\n")
 
@@ -229,9 +224,8 @@ abline(h = 0)
 
 dev.off()
 
-############################
+
 # 11. UMAP ANALYSIS
-############################
 
 cat("\nRunning UMAP...\n")
 
@@ -252,9 +246,8 @@ legend("topright", legend = levels(gs), col = 1:length(levels(gs)), pch = 20)
 
 dev.off()
 
-############################
+
 # 12. EXPORT NORMALIZED MATRIX
-############################
 
 cat("\nSaving normalized counts...\n")
 
@@ -263,9 +256,8 @@ write.csv(
   "results/normalized_counts.csv"
 )
 
-############################
+
 # 13. SESSION INFO 
-############################
 
 writeLines(capture.output(sessionInfo()),
            "results/sessionInfo.txt")
