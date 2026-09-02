@@ -81,14 +81,14 @@ The workflow exports:
 ---
 
 <div align="center">
-  <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/280f18e9aab5d8c345cfa2bbce9fd5e637ae1d38/Results/plots/box_and_whisker_plot.png?raw=true" width="200">
+  <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/280f18e9aab5d8c345cfa2bbce9fd5e637ae1d38/Results/plots/box_and_whisker_plot.png?raw=true" width="300">
   <br>
   <b>Pathogenicity score threshold</b>
 </div>
 
 
 <div align="center">
-  <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/280f18e9aab5d8c345cfa2bbce9fd5e637ae1d38/Results/plots/dispersion_plot.png?raw=true" width="200">
+  <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/280f18e9aab5d8c345cfa2bbce9fd5e637ae1d38/Results/plots/dispersion_plot.png?raw=true" width="300">
   <br>
   <b>Pathogenicity score threshold</b>
 </div>
