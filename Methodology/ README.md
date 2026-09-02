@@ -5,7 +5,7 @@ Samples were assigned to one of two experimental conditions, pre-treatment or po
 <div align="center">
   <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/f623ba3a17bcc5296caab33507c198cbddb7f644/Methodology/groups.png?raw=true" width="650">
   <br>
-  <b>Pathogenicity score threshold</b>
+  <b>group membership for samples</b>
 </div>
 
 
@@ -15,7 +15,7 @@ Differential gene expression analysis was performed using DESeq2 (v1.x, Biocondu
 <div align="center">
   <img src="https://github.com/amamina/GeneExpression_RNAseq_Analysis/blob/f623ba3a17bcc5296caab33507c198cbddb7f644/Methodology/low%20counts%20remove.png?raw=true" width="650">
   <br>
-  <b>Pathogenicity score threshold</b>
+  <b>Low counts genes removal</b>
 </div>
 
 
