@@ -1,0 +1,27 @@
+############################################################
+# RNA-seq Differential Expression Pipeline (DESeq2)
+# Dataset: GSE253495 (GEO)
+# Language: R (>=4.2)
+
+
+# Install packages only if missing (safe reproducibility block)
+packages <- c("DESeq2", "data.table", "ggplot2", "umap", "BiocManager")
+
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+
+# Load libraries
+library(DESeq2)
+library(data.table)
+library(ggplot2)
+library(umap)
+
+# Set reproducibility seed
+set.seed(123)
+
+# Create output folders
+dir.create("results", showWarnings = FALSE)
+dir.create("figures", showWarnings = FALSE)
