@@ -41,7 +41,7 @@ The primary objectives of this workflow are:
 ### 3. Gene Filtering
 
 * Remove low-expression genes
-* Retain genes with sufficient read support for statistical analysis
+* keep genes with sufficient read support for statistical analysis
 
 ### 4. Differential Expression Analysis
 
